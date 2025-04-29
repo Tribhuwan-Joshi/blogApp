@@ -7,7 +7,7 @@ export default function BlogList() {
 
   useEffect(() => {
     API.get("/blogs").then((res) => {
-      setBlogs(res.data.blogs);
+      setBlogs(res.data);
     });
   }, []);
 
@@ -15,7 +15,7 @@ export default function BlogList() {
     <div className="p-4">
       <h1 className="text-2xl mb-4">Blogs</h1>
       <div className="grid gap-4">
-        {blogs?.map((blog) => (
+        {blogs.map((blog) => (
           <Link
             key={blog._id}
             to={`/blogs/${blog._id}`}

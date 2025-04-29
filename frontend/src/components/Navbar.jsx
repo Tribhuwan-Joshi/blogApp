@@ -8,9 +8,9 @@ export default function Navbar() {
   return (
     <nav className="bg-gray-800 text-white p-4 flex justify-between">
       <Link to="/" className="font-bold">
-        BlogApp
+        BlogApp - Omnify
       </Link>
-      <div className="flex gap-4">
+      <div className="flex items-center gap-4">
         {user ? (
           <>
             <Link to="/create">Create</Link>
