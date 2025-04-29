@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
-import Navbar from "./components/NavBar";
+
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import BlogList from "./pages/BlogList";
 import BlogDetail from "./pages/BlogDetail";
 import CreateBlog from "./pages/CreateBlog";
 import EditBlog from "./pages/EditBlog";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
