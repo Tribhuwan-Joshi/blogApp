@@ -10,7 +10,9 @@ export default function Navbar() {
       <Link to="/" className="font-bold">
         BlogApp - Omnify
       </Link>
+
       <div className="flex items-center gap-4">
+        <Link to="/">All Blogs</Link>
         {user ? (
           <>
             <Link to="/create">Create</Link>

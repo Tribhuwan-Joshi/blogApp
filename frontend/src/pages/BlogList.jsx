@@ -49,7 +49,7 @@ export default function BlogList() {
                 </p>
               </Link>
 
-              {user?.id === blog.author && (
+              {user?._id === blog.author._id && (
                 <div className="mt-3 flex gap-4 text-sm">
                   <Link
                     to={`/edit/${blog._id}`}
